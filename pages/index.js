@@ -14,7 +14,7 @@ export default function Home() {
   const [mostWatched, setMostWatched] = useState([]);
 
   useEffect(() => {
-    fetch('https://api.themoviedb.org/3/movie/500/recommendations?api_key=3b942229f1b4c2047a94fd6ae64b9e40')
+    fetch('https://api.themoviedb.org/3/movie/popular?api_key=3b942229f1b4c2047a94fd6ae64b9e40')
       .then(res => res.json())
       .then(data => {
         console.log("momom", data.results);
@@ -23,7 +23,7 @@ export default function Home() {
       })
       .catch(err => console.log("ERROOROROR", err));
     
-    fetch('https://api.themoviedb.org/3/tv/100/recommendations?api_key=3b942229f1b4c2047a94fd6ae64b9e40')
+    fetch('https://api.themoviedb.org/3/tv/popular?api_key=3b942229f1b4c2047a94fd6ae64b9e40')
       .then(res => res.json())
       .then(data => {
         setSeries(data.results);

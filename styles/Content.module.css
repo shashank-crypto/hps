@@ -1,0 +1,52 @@
+.videos {
+    /* height: 250px; */
+    margin: 15px;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.videos > * {
+    flex: 0 0 250px;
+    margin-right: 10px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(255, 255, 255, 0.448);
+    /* opacity: 0.6; */
+    /* Add the blur effect
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+
+    /* Full height */
+    /* height: 100%;
+
+    /* Center and scale the image nicely */
+    /*background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.tag {
+    background-color: #7741c8a7;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 50px;
+    margin: 5px;
+}
+
+.info > img {
+    width: 20%;
+    height: auto;
+    padding: 10px;
+}
+
+.info > * {
+    margin: 10px;
+}
+
+.about {
+    max-width: 700px;
+}
