@@ -1,0 +1,35 @@
+.navlink > a {
+    color: #000;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.navlink > a:hover {
+    background: red 30%;
+    color: #000;
+}
+
+.searchbar > input {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    outline: none;
+    border: none;
+    border-radius: 50px 0px 0px 50px;
+    background-color: rgba(251, 23, 23, 0.467);
+}
+
+.searchbar > button {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    outline: none;
+    border: none;
+    border-radius: 0px 50px 50px 0px;
+    background-color: rgba(251, 23, 23, 0.467);
+}
