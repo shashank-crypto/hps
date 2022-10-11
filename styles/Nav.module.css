@@ -33,3 +33,13 @@
     border-radius: 0px 50px 50px 0px;
     background-color: rgba(251, 23, 23, 0.467);
 }
+
+.auth > button {
+    padding: 0.5rem 1rem;
+    margin: 0 4px;
+    font-weight: 400;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    background-color: rgba(251, 23, 23, 0.467);
+}

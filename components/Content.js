@@ -4,8 +4,10 @@ import Card from './Card.js';
 export const Content = ({title, content, link}) => {
 
     return (
-        <div>
-            <h1>{title}</h1><Link href={link}><h4>View more</h4></Link>
+        <div style={{
+            "margin" : "15px 0px",
+        }}>
+            <h3>{title}</h3><Link href={link}><h5 style={{"cursor" : "pointer"}}>View more</h5></Link>
             <div style={{"display":"flex", "overflowX" : "scroll", "overflowY" : "hidden"}}>
                 {
                     content.map((element, index) => {

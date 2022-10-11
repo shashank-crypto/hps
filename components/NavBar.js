@@ -5,13 +5,13 @@
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from '../styles/Nav.module.css';
-import ReactDOM from 'react-dom'
+import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 
 const NavBar = () => {
     return (
-        <div style={{"display" : "flex", "justifyContent" : "space-evenly"}}>
+        <div style={{"display" : "flex", "justifyContent" : "space-evenly", "alignItems" : "center"}}>
             <div className={styles.searchbar}>
                 <input type='text' placeholder='Search' />
                 
@@ -31,8 +31,9 @@ const NavBar = () => {
                 Most Watched
             </a>
             </div>
-            <div>
-                <button>Login</button>
+            <div className={styles.auth}>
+                <Link href='/login'><button>Login</button></Link>
+                <Link href={'/register'}><button>Register</button></Link>
             </div>
         </div>
     )

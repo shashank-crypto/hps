@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 import NavBar from '../components/NavBar'
 import styles from '../styles/Home.module.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { Content } from '../components/Content';
 
 import { useState, useEffect } from 'react';
@@ -42,9 +41,9 @@ export default function Home() {
         HPS Entertainments
       </h2>
       <NavBar/>
-      <Content title='Movies' content={movies} link='movies'/>
-      <Content title='Series' content={series} link='series'/>
-      <Content title='Most Watched' content={mostWatched} link='most-watched'/>
+      <div id='movies'><Content title='Movies' content={movies} link='movies'/></div>
+      <div id='series'><Content title='Series' content={series} link='series'/></div>
+      <div id='mostwatched'><Content title='Most Watched' content={mostWatched} link='most-watched'/></div>
     </div>
   )
 }

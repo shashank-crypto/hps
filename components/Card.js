@@ -13,7 +13,6 @@ const Card4 = ({title, image, page, overview, link, id}) => {
                 <h4>{title}</h4>
                 <span>{overview}</span>
                 {/* <img src={image}/> */}
-                <a href={page}>Go to {title}</a>
             </div>
             </a>
         </div>
