@@ -17,6 +17,7 @@ const Register = () => {
         const city = e.target.city.value;
         const state = e.target.state.value;
         const pin = e.target.pin.value;
+        e.target.reset();
         console.log(email, password, name, contact, cardno, expiry, city, state, pin);
         fetch('/api/users', {
             method: 'POST',

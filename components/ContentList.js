@@ -1,7 +1,7 @@
 import Link from 'next/link.js';
 import Card from './Card.js';
 
-export const Content = ({title, content, link}) => {
+const ContentList = ({title, content, link}) => {
 
     return (
         <div style={{
@@ -18,3 +18,5 @@ export const Content = ({title, content, link}) => {
         </div>
     ) 
 }
+
+export default ContentList;

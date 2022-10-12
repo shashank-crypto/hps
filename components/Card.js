@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card';
 import styles from '../styles/Card.module.css'
 import Link from "next/link";
 
-const Card4 = ({title, image, page, overview, link, id}) => {
+const Card4 = ({title, image, overview, link, id}) => {
     return (
         <div className={styles.card}>
             <a href={`${link}/${id}`}>
